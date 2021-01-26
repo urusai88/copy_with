@@ -14,7 +14,7 @@ dependencies:
       url: https://github.com/urusai88/copy_with.git
       path: copy_with
   source_gen: ^0.9.0
-  analyzer: ^0.41.0
+  analyzer: ">=0.40.0"
   build: ^1.0.0
 
 dev_dependencies:
