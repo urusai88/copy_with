@@ -23,8 +23,15 @@ class GenericObject<T> {
     this.nullableId,
     required this.i,
   });
+
+  GenericObject.poof({
+    required this.id,
+    required this.data,
+    required this.nullableId,
+    required this.i,
+  });
 }
 
 void main() {
-  final c = GenericObject(id: 1, data: 'data', i: 1);
+  final c = GenericObject(id: 1, data: 'data', i: 5);
 }

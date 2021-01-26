@@ -17,25 +17,28 @@ extension SimpleObjectCopyWithExtension on SimpleObject {
 }
 
 extension GenericObjectCopyWithExtension<T> on GenericObject<T> {
-  GenericObject<T> copyWith({
+  GenericObject copyWith({
     int? id,
     T? data,
     int? nullableId,
+    int? i,
   }) {
     return GenericObject(
       id: id ?? this.id,
       data: data ?? this.data,
       nullableId: nullableId ?? this.nullableId,
+      i: i ?? this.i,
     );
   }
 
-  GenericObject<T> copyWithNull({
+  GenericObject copyWithNull({
     bool nullableId = false,
   }) {
     return GenericObject(
       id: this.id,
       data: this.data,
       nullableId: nullableId ? null : this.nullableId,
+      i: this.i,
     );
   }
 }
