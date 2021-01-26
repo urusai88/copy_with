@@ -1,0 +1,12 @@
+name: copy_with
+description: A new flutter plugin project.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.12.0-0 <3.0.0"
+
+dependencies:
+
+dev_dependencies:
