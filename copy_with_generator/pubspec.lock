@@ -130,9 +130,11 @@ packages:
   copy_with:
     dependency: "direct main"
     description:
-      path: "../copy_with"
-      relative: true
-    source: path
+      path: copy_with
+      ref: HEAD
+      resolved-ref: e2983151c019d2115fe71b987ff716eefdb7fced
+      url: "https://github.com/urusai88/copy_with.git"
+    source: git
     version: "0.0.1"
   crypto:
     dependency: transitive
