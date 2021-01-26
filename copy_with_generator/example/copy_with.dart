@@ -14,10 +14,17 @@ class GenericObject<T> {
   final int id;
   final T data;
   final int? nullableId;
+  @CopyWithField(ignore: true)
+  final int i;
 
-  GenericObject({required this.id, required this.data, this.nullableId});
+  GenericObject({
+    required this.id,
+    required this.data,
+    this.nullableId,
+    required this.i,
+  });
 }
 
 void main() {
-  final c = GenericObject(id: 1, data: 'data');
+  final c = GenericObject(id: 1, data: 'data', i: 1);
 }
